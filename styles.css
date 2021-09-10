@@ -1,0 +1,44 @@
+
+:root {
+	--pink: #fbf7f4;
+	--black: #292826;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+    background-color: var(--pink);
+	color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 1em;
+    overflow-y: hidden;
+}
+/* hide scrollbar but allow scrolling */
+#container{
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+  }
+  
+  #container::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+  
+  /* other styling */
+  #container {
+        position: absolute;
+        top: 1em;
+        bottom: 1em;
+        left: 1em;
+        right: 1em;
+        border: solid 5px black;
+        z-index: -100;
+        padding: 1em;
+        background-color: orange;
+  }
