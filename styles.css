@@ -1,6 +1,7 @@
 :root {
 	--pink: #fbf7f4;
 	--black: #292826;
+	--fixed-padding-lg: 1em;
 }
 
 * {
@@ -33,40 +34,33 @@ body {
 /* other styling */
 #container {
 	position: absolute;
-	top: 1em;
-	bottom: 1em;
-	left: 1em;
-	right: 1em;
+	top: var(--fixed-padding-lg);
+	bottom: var(--fixed-padding-lg);
+	left: var(--fixed-padding-lg);
+	right: var(--fixed-padding-lg);
 	border: 2px solid var(--black);
 	z-index: -100;
 	padding: 0;
 }
 #navbar {
-	max-width: 1560px;
+	margin: 0 auto;
 	width: 100%;
+	top: var(--fixed-padding-lg);
+	right: var(--fixed-padding-lg);
+	left: var(--fixed-padding-lg);
+	border: 2px solid var(--black);
 }
 #navbar-container {
 	display: flex;
 	justify-content: space-between;
-	border: 2px solid var(--black);
-	/* margin-top: -4px;
-	margin-left: -2px;
-	margin-right: -2px; */
-	margin: -4px -2px 0 -2px;
 }
 #logo {
 	border: 2px solid var(--black);
-	/* margin-left: -2px;
-	margin-top: -4px;
-	margin-bottom: -2px; */
 	margin: -4px 0 -2px -2px;
 	padding: 0.5em;
 }
 #menu {
 	border: 2px solid var(--black);
-	/* margin-right: -2px;
-	margin-top: -2px;
-	margin-bottom: -2px; */
 	margin: -2px -2px -2px 0;
 	display: flex;
 	justify-content: center;
@@ -86,15 +80,50 @@ body {
 	height: 5px;
 	background-color: var(--black);
 }
-#contact-container {
-	position: absolute;
-	margin: 0 -8px -8px 0;
-	padding: 5px;
-	bottom: 0;
-	right: 0;
+/* Hero Section */
+#hero-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: slateblue;
+	width: 100%;
+	height: 80vh;
 }
+#hero-container h1 {
+	font-size: 3em;
+	background-color: orange;
+	text-align: left;
+	width: 50%;
+}
+/* About Section */
+#about-section {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	background-color: salmon;
+	width: 100%;
+	height: 80vh;
+	padding: 10em;
+}
+
+.section-header {
+	padding: 0.3em 0.5em;
+	font-size: 2.4em;
+	border: 2px solid var(--black);
+	border-radius: 5em;
+	text-transform: uppercase;
+}
+
+/* Contact Button */
 #contact-btn {
+	position: absolute;
+	margin: 0 2px 2px 0;
 	padding: 1.4em;
 	border: 2px solid var(--black);
 	background-color: var(--pink);
+	bottom: var(--fixed-padding-lg);
+	right: var(--fixed-padding-lg);
+	float: right;
 }
