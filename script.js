@@ -1,10 +1,14 @@
 
-  const contactBtn= document.querySelector('#contact-btn');
   const contactContainer = document.querySelector('.contact-information');
 
-  const contactDisplay = () => {
-      
-      contactContainer.classList.toggle('active');
-  }
+//   const contactDisplay = () => {
+//       contactBtn.classList.toggle('active');
+//       console.log('I AM A BUTTON!!!!')
+//   }
 
-  contactBtn.addEventListener('click', contactDisplay);
+//   contactBtn.addEventListener('click', contactDisplay);
+
+function contactDisplay() {
+    contactContainer.classList.toggle('active');
+    console.log('I AM A BUTTON!');
+}

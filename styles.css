@@ -221,6 +221,7 @@ body {
 	justify-content: flex-start;
 	align-items: flex-end;
 	position: absolute;
+	top: auto;
 	bottom: var(--fixed-padding-lg);
 	left: var(--fixed-padding-lg);
 	right: var(--fixed-padding-lg);
