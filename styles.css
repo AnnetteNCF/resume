@@ -19,7 +19,7 @@ body {
 	align-items: center;
 	align-content: center;
 	padding: 1em;
-	overflow-y: hidden;
+	overflow: hidden;
 }
 /* hide scrollbar but allow scrolling */
 #container {
@@ -62,7 +62,7 @@ body {
 	margin: -2px 0 -2px -2px;
 	padding: 0.5em;
 }
-#menu {
+#menu-btn {
 	border: 2px solid var(--black);
 	margin: -2px -2px -2px 0;
 	display: flex;
@@ -70,18 +70,23 @@ body {
 	align-items: flex-start;
 	flex-direction: column;
 	padding: 1em 0.5em;
+	z-index: 600;
+	background-color: var(--black);
 }
 
 #line-one {
-	background-color: var(--black);
+	background-color: var(--pink);
 	width: 40px;
 	height: 4px;
 	margin-bottom: 5px;
 }
+#line-one.active {
+	transform: rotateZ(45deg);
+}
 #line-two {
 	width: 30px;
 	height: 4px;
-	background-color: var(--black);
+	background-color: var(--pink);
 }
 /* Hero Section */
 #hero-container {
@@ -106,6 +111,11 @@ body {
 	font-size: 3em;
 	text-align: left;
 	width: 100%;
+}
+#imaginative {
+	border: 1px solid var(--black);
+	padding: 0.1em 0.5em;
+	border-radius: 5em;
 }
 /* About Section */
 #about-section {
@@ -254,7 +264,54 @@ ul {
 li {
 	padding: 0.16em;
 }
-
+/* THIS IS THE MENU SECTION */
+/* .menu-container {
+	position: absolute;
+	top: var(--fixed-padding-lg);
+	bottom: var(--fixed-padding-lg);
+	left: var(--fixed-padding-lg);
+	right: var(--fixed-padding-lg);
+	border: 2px solid var(--black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--pink);
+	z-index: 500;
+	padding: 4em;
+} */
+.menu-container {
+	position: absolute;
+	right: -1000px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--pink);
+	z-index: 500;
+	padding: 4em;
+}
+.menu-container.is-active {
+	position: absolute;
+	top: var(--fixed-padding-lg);
+	bottom: var(--fixed-padding-lg);
+	left: var(--fixed-padding-lg);
+	right: var(--fixed-padding-lg);
+	border: 2px solid var(--black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--pink);
+	z-index: 300;
+	padding: 4em;
+}
+#menu-container li {
+	font-size: 5em;
+}
+#menu-container li:hover {
+	text-decoration: line-through;
+	font-style: italic;
+	transform: translate(-20px);
+	transition: 0.3s ease-in-out;
+}
 @media screen and (max-width: 1024px) {
 	#hero-container h1 {
 		font-size: 2.2em;

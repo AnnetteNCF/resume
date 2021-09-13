@@ -12,23 +12,33 @@
 <body>
     <button onclick="contactDisplay()"
     id="contact-btn">Contact</button>
+    <!-- THIS IS THE MENU CONTAINER -->
+    <div class="menu-container">
+        <ul>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Contact</li>
+        </ul>
+    </div>
     <!-- THIS IS THE NAVBAR -->
     <div id="navbar">
         <div id="navbar-container">
             <div id="logo">
                 <img src="logo-01.svg" width=36 />
             </div>
-            <div id="menu">
+            <button 
+            id="menu-btn" 
+            onclick="menuDisplay()">
                 <div id="line-one"> </div>
                 <div id="line-two"> </div>
-            </div>
+            </button>
         </div>
     </div>
     <div id="container">
         <!-- THIS IS THE HERO -->
         <div id="hero-container">
             <h1 id="greeting">Hello!</h1>
-            <h1 id="hero-text">This is the portfolio of Annette Carreon, an imaginative frontend developer  based in Phoenix, Arizona.</h1>
+            <h1 id="hero-text">This is the portfolio of Annette Carreon, an <span id="imaginative">imaginative</span> frontend developer  based in Phoenix, Arizona.</h1>
         </div>
         <!-- THIS IS THE ABOUT SECTION -->
         <div id="about-section">
