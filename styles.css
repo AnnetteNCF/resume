@@ -10,6 +10,7 @@
 	margin: 0;
 	padding: 0;
 	cursor: none;
+	font-family: 'Roboto', sans-serif;
 	/* scroll-behavior: smooth; */
 }
 
@@ -135,10 +136,19 @@ body {
 	text-align: left;
 	width: 100%;
 }
+#name {
+	/* font-family: 'Permanent Marker', cursive; */
+	/* letter-spacing: 0.2em; */
+}
 #imaginative {
 	border: 1px solid var(--black);
 	padding: 0.05em 0.3em 0.1em 0.3em;
 	border-radius: 5em;
+}
+#title {
+	/* padding-bottom: 0.5em;
+	text-decoration-style: wavy;
+	text-decoration-line: underline; */
 }
 /* About Section */
 #about-section {
@@ -155,12 +165,12 @@ body {
 .section-header {
 	padding: 0.3em 0.5em;
 	font-size: 1.6em;
-	/* border: 2px solid var(--black); */
 	background-color: var(--black);
 	color: var(--pink);
 	border-radius: 5em;
 	text-transform: uppercase;
 	margin-bottom: 2em;
+	letter-spacing: 1.5px;
 }
 
 #about-container {
@@ -169,7 +179,7 @@ body {
 }
 
 .about-text {
-	width: 40%;
+	width: 30%;
 	margin: 0.5em;
 	padding: 0.5em;
 }
