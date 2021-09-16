@@ -46,6 +46,9 @@ body {
 	width: 18px;
 	border-radius: 50em;
 }
+#main {
+	/* position: relative; */
+}
 /* hide scrollbar but allow scrolling */
 #main-container {
 	-ms-overflow-style: none; /* for Internet Explorer, Edge */
@@ -322,6 +325,12 @@ li {
 	}
 	#hero-text {
 		font-size: 1.8em;
+	}
+	#cursor-container {
+		display: none;
+	}
+	* {
+		cursor: auto;
 	}
 }
 @media screen and (max-width: 790px) {
