@@ -1,7 +1,7 @@
 
   const contactContainer = document.querySelector('.contact-information');
   const menuContainer = document.querySelector('.menu-container');
-  const topLine = document.querySelector('#line-one');
+  // const topLine = document.querySelector('#line-one');
   const mouseCursor= document.querySelector('#cursor-container');
 
 
