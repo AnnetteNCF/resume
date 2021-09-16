@@ -2,6 +2,7 @@
 	--pink: #fbf7f4;
 	--black: #292826;
 	--absolute-pd: 1em;
+	--absolute-pd-sm: 0.5em;
 }
 
 * {
@@ -368,14 +369,14 @@ li {
 		font-size: 0.8em;
 		width: auto;
 	}
-	#arrow {
-		width: 30px;
+	.arrow {
+		width: 20px;
 		height: auto;
 	}
 }
 @media screen and (max-width: 537px) {
 	.section {
-		padding: 2em;
+		padding: 1em;
 	}
 
 	#greeting {
@@ -391,9 +392,12 @@ li {
 		margin-bottom: 3em;
 	}
 	.project-number,
-	.project-title,
-	.project-tools {
+	.project-title {
 		padding-right: 1em;
+	}
+
+	.project-tools {
+		display: none;
 	}
 	.contact-information.active {
 		justify-content: flex-start;
@@ -407,14 +411,25 @@ li {
 		flex-direction: column;
 		margin: 0 1em 0 0;
 	}
-	/* #contact-btn {
-		margin: 0 auto;
-		float: none;
-		width: 100vw;
-		bottom: var(--absolute-pd);
-		right: var(--absolute-pd);
-		left: var(--absolute-pd);
-		border: 2px solid var(--black);
-		background-color: var(--pink);
+	/* NOT WORKING */
+	/* #main-container {
+		top: var(--absolute-pd-sm);
+		bottom: var(--absolute-pd-sm);
+		left: var(--absolute-pd-sm);
+		right: var(--absolute-pd-sm);
+	}
+	.contact-information.active {
+		bottom: var(--absolute-pd-sm);
+		left: var(--absolute-pd-sm);
+		right: var(--absolute-pd-sm);
+	}
+	#navbar {
+		top: var(--absolute-pd-sm);
+		right: var(--absolute-pd-sm);
+		left: var(--absolute-pd-sm);
+	}
+	#contact-btn {
+		bottom: var(--absolute-pd-sm);
+		right: var(--absolute-pd-sm);
 	} */
 }
