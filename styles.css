@@ -110,7 +110,6 @@ body {
 #hero-section {
 	flex-direction: column;
 	width: 100%;
-	height: 100vh;
 	padding: 4em;
 }
 #hero-text {
@@ -273,6 +272,9 @@ li {
 	.section {
 		margin-bottom: 2em;
 	}
+	#hero-section {
+		padding: 2em 0;
+	}
 	#greeting {
 		font-size: 2.6em;
 	}
@@ -324,8 +326,7 @@ li {
 	}
 }
 @media screen and (max-width: 537px) {
-	.section,
-	#hero-section {
+	.section {
 		padding: 1em;
 	}
 	#hero-section {
