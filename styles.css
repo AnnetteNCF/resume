@@ -9,7 +9,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	overflow: hidden;
 }
 a {
@@ -102,6 +102,7 @@ body {
 	align-items: center;
 	width: 100%;
 	padding: 6em 4em;
+	/* background-color: orange; */
 }
 .container {
 	width: 760px;
@@ -110,7 +111,11 @@ body {
 
 /* Hero Section */
 #hero-section {
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
 	flex-direction: column;
+	margin-top: 6em;
 	width: 100%;
 	padding: 4em;
 }
@@ -120,8 +125,10 @@ body {
 	line-height: 1.4;
 }
 #greeting {
-	font-size: 3em;
+	font-size: 2.5em;
 	text-align: left;
+	font-family: "Press Start 2P", system-ui;
+	margin-bottom: 24px;
 }
 
 #imaginative {
